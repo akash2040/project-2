@@ -1,9 +1,6 @@
 const Sequelize = require("sequelize");
-//require dotenv so we can hide our passwords
 require("dotenv").config();
-
 let sequelize;
-// using JAWSDB because its a Heroku add-on that provides a fully functional MySQL database server for use with your Heroku application
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
