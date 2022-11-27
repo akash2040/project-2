@@ -1,0 +1,103 @@
+body,
+html {
+  background-image: url("../assets/logo3.jpg");
+  background-color: aliceblue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  color: rgb(20, 22, 24);
+}
+
+header {
+  background-color: #000;
+  flex: 0;
+  width: 100%;
+  min-height: 100px;
+}
+
+header section {
+  max-width: 1080px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header section * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+
+figure {
+  margin: 0;
+  min-height: 100%;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+nav {
+  min-height: 100%;
+}
+
+nav a,
+nav button {
+  margin-left: 10px;
+}
+
+main {
+  flex: 1;
+}
+
+main section {
+  max-width: 1080px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.post_card,
+.comment_card {
+  background-color: white;
+  margin: 20px 0;
+  box-shadow: 2px 2px 2px #333;
+}
+
+.post_card h2,
+.post_card h4 {
+  background-color: #333;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.post_card p,
+.comment_card p {
+  padding: 10px;
+}
+
+#logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#logout:hover {
+  color: #065b83;
+}
+
+.comment_card h4 {
+  background-color: #777;
+  padding: 10px;
+  color: aliceblue;
+}

@@ -1,0 +1,45 @@
+<h2>Welcome, {{name}}!</h2>
+
+<div class="container">
+  <div class="row">
+    <form id="search_form" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input
+            placeholder=""
+            name="search"
+            id="search"
+            type="text"
+            class="validate"
+          />
+          <button for="search">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="search-results" class="container">
+
+</div>
+
+{{#if posts.length}}
+  <div class="col-md-6 post-list">
+    <h3>Your posts:</h3>
+
+    {{#each posts as |post|}}
+      <div class="post_card">
+        <div>
+          <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+          <p>Created by you, on {{format_date post.date_created}}</p>
+        </div>
+        <div>
+          <a href="/edit/{{post.id}}"><button>EDIT</button></a>
+          <button data-id="{{post.id}}">DELETE</button>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{/if}}
+
+<script src="/js/dashboard.js"></script>
+<script src="/js/anime.js"></script>

@@ -1,13 +1,12 @@
 const router = require("express").Router();
 
 const apiRoutes = require("./api");
-const homeRoutes = require("./homepage-routes");
-const profileRoutes = require("./profile-routes");
-const styleRoutes = require("./style-routes");
+const homeRoutes = require("./homeRoutes");
 
 router.use("/", homeRoutes);
 router.use("/api", apiRoutes);
-router.use("/profile", profileRoutes);
-router.use("/style", styleRoutes);
+router.use((req, res) => {
+  res.send("Wrong Route!");
+});
 
 module.exports = router;

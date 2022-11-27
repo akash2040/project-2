@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS anime_db;
+DROP DATABASE IF EXISTS animes_db;
 
-CREATE DATABASE anime_db;
+CREATE DATABASE animes_db;
 
