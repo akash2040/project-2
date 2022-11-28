@@ -1,6 +1,6 @@
 const sequelize = require("../config/connection");
 const { User, Post } = require("../models");
-
+// const anime = require("./anime-seed.json");
 const userData = require("./userData.json");
 const postData = require("./postData.json");
 
